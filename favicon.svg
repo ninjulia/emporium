@@ -1,0 +1,28 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<defs>
+    <linearGradient id="darkGrad" gradientUnits="userSpaceOnUse" x1="106.6829" y1="43.5434" x2="439.7118" y2="376.5724">
+		<stop  offset="0" style="stop-color:#FFFF33"/>
+		<stop  offset="0.5" style="stop-color:#FF9933"/>
+		<stop  offset="1" style="stop-color:#CC66FF"/>
+	</linearGradient>
+	<linearGradient id="lightGrad" gradientUnits="userSpaceOnUse" x1="106.6829" y1="43.5434" x2="439.7118" y2="376.5724">
+		<stop  offset="2.793296e-03" style="stop-color:#330033"/>
+		<stop  offset="0.1536" style="stop-color:#660066"/>
+		<stop  offset="0.6536" style="stop-color:#CC0066"/>
+		<stop  offset="1" style="stop-color:#FF3399"/>
+	</linearGradient>
+</defs>
+<style type="text/css">
+	.st0{fill: url(#lightGrad)}
+	
+	@media (prefers-color-scheme:dark){
+		.st0{fill: url(#darkGrad)}
+	}
+</style>
+<path class="st0" d="M409.79,34.09c-49.27-16.9-103.56-3.02-145.66,31.94c-17.94,14.89-42.48,18.98-64.39,11
+	C149.62,58.75,95.85,63.46,56.77,94.58c-63.35,50.44-64.1,151.16-1.66,224.95c47.95,56.67,156.86,164.15,229.24,165.14
+	c7.81,0.82,15.9,0.43,24.15-1.02c74.1-12.97,153.01-160.62,181.8-236.83C524.51,156.32,488.46,61.08,409.79,34.09z M361.63,299.09
+	c0,71.12-46.6,87.59-120.87,87.59c-35.04,0-66.22-4.55-90.39-8.76v-21.37c23.47,3.15,44.5,5.25,67.27,5.25
+	c41.34,0,55.71-12.61,55.71-52.21V125.32h88.29V299.09z"/>
+</svg>
