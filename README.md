@@ -24,11 +24,13 @@ Code repository for my 'link in bio' website, emporium.becausejulia.com. Project
 
 ### Code Resources
 
-- not currently leveraging any external libraries (vanilla html and css)
+- [11ty-sass-skeleton](https://github.com/5t3ph/11ty-sass-skeleton)
+- [a11y-color-tokens](https://github.com/5t3ph/a11y-color-tokens)
 
 ### Tech and Tooling
 
-- HTML, CSS
+- 11ty
+- SASS
 
 ### Links
 
@@ -43,23 +45,16 @@ Code repository for my 'link in bio' website, emporium.becausejulia.com. Project
 
 ### Current Release
 
-- Rebuild [current "link in bio" page](https://www.becausejulia.com/instagram) eliminating Bootstrap dependencies.
-- Finess branding with updated colors, fonts, typescale
-- Leverage OKLCH for color
-- Set up dark mode color scheme
-- Craft favicon set
-- Set up dark mode favicon
-- Host site on Github/Netlify
+- Rebuild site using 11ty-sass-skeleton
+- Self host Google Fonts
+- Organize SCSS files
+- Create a11y compliant color themes with a11y-color-tokens
+- Incorporate new color into scss files
 
 ### Future Improvements
 
-- Step One
-
-  - Leverage 11ty framework
-  - Leverage SASS
-  - Minify HTML and CSS output
-
 - Step Two
+  - "Componentize" retailer links
   - Connect to Notion for CMS capabilities
   - Set up auto-publishing
 
