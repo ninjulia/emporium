@@ -1,0 +1,13 @@
+<a id="{{ links.data.page.fileSlug }}" class="links box-shadow" href="{{ links.data.linkurl }}"
+    title="{{ links.data.linkurl }}">
+    {% if links.content %}
+    <span class="theme-{{ links.data.color }} box-shadow text-small"> {{links.content | safe}} </span>
+    {% endif %}
+    <h2>
+        <picture>
+            <source srcset="./assets/img/{{ links.data.page.fileSlug }}-logow.webp" media="(prefers-color-scheme:dark)">
+            <img src="./assets/img/{{ links.data.page.fileSlug }}-logo.webp" alt="shop on {{ links.data.name }}"
+                width="256" height="200" />
+        </picture>
+    </h2>
+</a>

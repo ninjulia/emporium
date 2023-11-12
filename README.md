@@ -45,18 +45,23 @@ Code repository for my 'link in bio' website, emporium.becausejulia.com. Project
 
 ### Current Release
 
-- Rebuild site using 11ty-sass-skeleton
-- Self host Google Fonts
-- Organize SCSS files
-- Create a11y compliant color themes with a11y-color-tokens
-- Incorporate new color into scss files
+- "Componentize" retailer links
+- Sort link appearance by discount offer
+- Add logic for empty discount state
+- Add year shortcode for copyright date
+- Update font stack
+- Clean up main folder
 
 ### Future Improvements
 
-- Step Two
-  - "Componentize" retailer links
+- Step Three
+
   - Connect to Notion for CMS capabilities
   - Set up auto-publishing
+
+- Step Four
+- Totally unnecessary redesign
+- Leverage parallax scrolling
 
 ## Acknowledgments
 
