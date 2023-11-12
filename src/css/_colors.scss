@@ -1,0 +1,290 @@
+/****************************
+/*color themeing
+/****************************/
+
+$color-primary: oklch(35.8% 0.16456016007256816 328.3634179234515) !default;
+$color-on-primary: oklch(71.92% 0.137 326.88) !default;
+$color-flamingo: oklch(67.02% 0.246 356.4) !default;
+$color-on-flamingo: oklch(27.92% 0.113 0.34) !default;
+$color-lavender: oklch(69.37% 0.228 312.73) !default;
+$color-on-lavender: oklch(31.48% 0.127 311.46) !default;
+$color-lemon: oklch(96.91% 0.20052121903256453 109.62279760389258) !default;
+$color-on-lemon: oklch(54.44% 0.11867079107912455 109.76923207652119) !default;
+$color-lime: oklch(77.9% 0.184 137.01) !default;
+$color-on-lime: oklch(40.6% 0.117 138.12) !default;
+$color-magenta: oklch(54.57% 0.22 2.11) !default;
+$color-on-magenta: oklch(93.27% 0.042 345.49) !default;
+$color-plum: oklch(22.53% 0.10354943370724017 328.36341792345144) !default;
+$color-on-plum: oklch(61.74% 0.127 326.98) !default;
+$color-tangerine: oklch(77.37% 0.1629242564458139 60.27624333879814) !default;
+$color-on-tangerine: oklch(39.83% 0.09992657032827902 53.91455716009873) !default;
+$color-light: oklch(96.91% 0 109.62279760389258) !default;
+$color-on-light: oklch(54.52% 0 0) !default;
+$color-darkest: oklch(18.53% 0.10354943370724017 328.36341792345144) !default;
+$color-on-darkest: oklch(59.82% 0.107 326.81) !default;
+
+$base-color-tokens: (
+	'primary',
+	'flamingo',
+	'lavender',
+	'lemon',
+	'lime',
+	'magenta',
+	'plum',
+	'tangerine',
+	'light',
+	'darkest'
+);
+
+$color-tokens: (
+	'color-primary': $color-primary,
+	'color-on-primary': $color-on-primary,
+	'color-flamingo': $color-flamingo,
+	'color-on-flamingo': $color-on-flamingo,
+	'color-lavender': $color-lavender,
+	'color-on-lavender': $color-on-lavender,
+	'color-lemon': $color-lemon,
+	'color-on-lemon': $color-on-lemon,
+	'color-lime': $color-lime,
+	'color-on-lime': $color-on-lime,
+	'color-magenta': $color-magenta,
+	'color-on-magenta': $color-on-magenta,
+	'color-plum': $color-plum,
+	'color-on-plum': $color-on-plum,
+	'color-tangerine': $color-tangerine,
+	'color-on-tangerine': $color-on-tangerine,
+	'color-light': $color-light,
+	'color-on-light': $color-on-light,
+	'color-darkest': $color-darkest,
+	'color-on-darkest': $color-on-darkest,
+) !default;
+
+@mixin color-tokens() {
+	--color-primary: #{$color-primary};
+	--color-on-primary: #{$color-on-primary};
+	--color-flamingo: #{$color-flamingo};
+	--color-on-flamingo: #{$color-on-flamingo};
+	--color-lavender: #{$color-lavender};
+	--color-on-lavender: #{$color-on-lavender};
+	--color-lemon: #{$color-lemon};
+	--color-on-lemon: #{$color-on-lemon};
+	--color-lime: #{$color-lime};
+	--color-on-lime: #{$color-on-lime};
+	--color-magenta: #{$color-magenta};
+	--color-on-magenta: #{$color-on-magenta};
+	--color-plum: #{$color-plum};
+	--color-on-plum: #{$color-on-plum};
+	--color-tangerine: #{$color-tangerine};
+	--color-on-tangerine: #{$color-on-tangerine};
+	--color-light: #{$color-light};
+	--color-on-light: #{$color-on-light};
+	--color-darkest: #{$color-darkest};
+	--color-on-darkest: #{$color-on-darkest};
+}
+
+// Loop through the provided $base-color-tokens to generate classes
+@each $color in $base-color-tokens {
+	.theme-#{$color} {
+		background-color: var(--color-#{$color});
+		color: var(--color-on-#{$color});
+	}
+}
+
+:root {
+	@include color-tokens();
+
+	--color-purple: var(--color-primary);
+	--lightest: oklch(100% 0 0);
+
+	/* brand gradients */
+	--sunset: linear-gradient(-45deg, var(--color-lemon) 42%, var(--color-flamingo) 100%);
+	--sherbert: linear-gradient(-45deg, var(--color-lemon) 25%, var(--color-tangerine) 75%, var(--color-lavender) 100%);
+	--dusk: linear-gradient(
+		45deg,
+		var(--color-plum) 15%,
+		var(--color-purple) 40%,
+		var(--color-magenta) 65%,
+		var(--color-flamingo) 100%
+	);
+}
+
+.sunset-gradient,
+.sherbert-gradient,
+.dusk-gradient {
+	background-attachment: fixed;
+}
+
+.sunset-gradient {
+	background-color: var(--color-lemon);
+	background-image: var(--sunset);
+}
+
+.sherbert-gradient {
+	background-color: var(--color-lavender);
+	background-image: var(--sherbert);
+}
+
+.dusk-gradient {
+	background-color: var(--color-plum);
+	background-image: var(--dusk);
+}
+
+.insta {
+	background-color: oklch(70.97% 0.174 44.51);
+	background-image: linear-gradient(
+		to bottom right,
+		oklch(54.06% 0.209 269),
+		oklch(52.49% 0.199 280.35),
+		oklch(50.42% 0.188 308.56),
+		oklch(56.3% 0.191 350.4),
+		oklch(60.46% 0.213 6.78),
+		oklch(63.22% 0.248 28.28),
+		oklch(67.65% 0.189 33.77),
+		oklch(70.97% 0.174 44.51),
+		oklch(81% 0.148 71.13),
+		oklch(90.49% 0.118 89.16)
+	);
+}
+
+.pinterest {
+	background-color: oklch(58.24% 0.236 25.54);
+}
+
+/* prefers color scheme dark */
+@media (prefers-color-scheme: dark) {
+	html {
+		/*text colors */
+		--accent: var(--color-on-plum);
+		--text-color: var(--color-light);
+
+		/*background colors*/
+		--fill: var(--color-darkest); /*contrasting areas*/
+		--field: var(--color-plum); /*background*/
+
+		--shadow: oklch(4% 0.018 279.88);
+		--gradient: var(--sherbert);
+	}
+}
+
+/* prefers color scheme light */
+@media (prefers-color-scheme: light) {
+	html {
+		/*text colors */
+		--accent: var(--color-primary);
+		--text-color: var(--color-on-light);
+
+		/*background colors*/
+		--fill: var(--lightest); /*contrasting areas*/
+		--field: var(--color-light); /*background*/
+
+		--shadow: oklch(22.09% 0.018 279.88 / 15%);
+		--gradient: var(--dusk);
+	}
+}
+
+body {
+	color: var(--text-color);
+	background-color: var(--field);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 img,
+h2 img,
+.logo {
+	color: var(--accent);
+}
+
+p,
+small {
+	color: var(--text-color);
+}
+
+p a,
+p a:link {
+	color: var(--text-color);
+	isolation: isolate;
+	position: relative;
+	text-decoration: none;
+
+	border-color: var(--accent);
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+p a::after {
+	content: '';
+	background-image: var(--gradient);
+	border-radius: 2px;
+	display: block;
+
+	position: absolute;
+	top: -0.25em;
+	left: -0.25em;
+
+	width: 0;
+	height: 2em;
+	z-index: -1;
+	transition: width 200ms ease-in-out;
+}
+
+p a:visited {
+	color: var(--color-flamingo);
+	border-color: var(--color-flamingo);
+}
+
+p a:focus,
+p a:hover {
+	color: var(--field);
+	border-color: var(--field);
+}
+
+p a:focus::after,
+p a:hover::after {
+	width: calc(100% + 0.5rem);
+}
+
+p a:active {
+	font-weight: 900;
+	background-image: var(--gradient);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+
+	border-image: var(--gradient) 10;
+	border-bottom-width: 3px;
+}
+
+p a:active::after {
+	width: 0;
+}
+
+.box-shadow {
+	box-shadow: 0 0.25rem 0.75rem var(--shadow);
+}
+
+.logo,
+.links {
+	background-color: var(--fill);
+	color: var(--accent);
+	fill: var(--accent);
+}
+
+.links {
+	border: 2px solid var(--accent);
+}
+
+.links h2 img,
+.logo svg {
+	color: var(--accent);
+}
+
+.icon-link,
+.icon-link .bi {
+	color: var(--lightest);
+	fill: var(--lightest);
+}

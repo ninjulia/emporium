@@ -1,0 +1,64 @@
+//Self-hosted Google Fonts, used under Open Font License.
+
+/****************************
+/* Headings
+/* https://fonts.google.com/specimen/Notable
+/*
+/****************************/
+
+@font-face {
+	font-family: 'Notable';
+	src: url('../assets/fonts/Notable-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: fallback;
+}
+
+$headings-font-family: 'Notable', system-ui, sans-serif;
+$headings-font-weight: 900;
+
+/****************************
+/* Body Text
+/* https://fonts.google.com/specimen/Notable
+/* A Variable font
+/*
+/****************************/
+
+@font-face {
+	font-family: 'Alexandria';
+	src: url('../assets/fonts/Alexandria-VariableFont_wght.ttf') format('truetype-variations');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+$font-family: 'Alexandria', system-ui, sans-serif;
+$font-weight-base: 400;
+
+/****************************
+/* Font Size Tokens
+/****************************/
+
+/* Step -2: 10.24px → 11.52px */
+$step--2: clamp(0.64rem, 0.6124rem + 0.1388vw, 0.72rem);
+
+/* Step -1: 12.80px → 14.40px */
+$step--1: clamp(0.8rem, 0.7655rem + 0.1735vw, 0.9rem);
+
+/* Step 0: 16.00px → 18.00px */
+$step-0: clamp(1rem, 0.9569rem + 0.2169vw, 1.125rem);
+
+/* Step 1: 20.00px → 22.50px */
+$step-1: clamp(1.25rem, 1.1961rem + 0.2711vw, 1.4063rem);
+
+/* Step 2: 25.00px → 28.13px */
+$step-2: clamp(1.5625rem, 1.495rem + 0.3395vw, 1.7581rem);
+
+/* Step 3: 31.25px → 35.16px */
+$step-3: clamp(1.9531rem, 1.8688rem + 0.4241vw, 2.1975rem);
+
+/* Step 4: 39.06px → 43.95px */
+$step-4: clamp(2.4413rem, 2.3358rem + 0.5304vw, 2.7469rem);
+
+/* Step 5: 48.83px → 54.93px */
+$step-5: clamp(3.0519rem, 2.9204rem + 0.6616vw, 3.4331rem);

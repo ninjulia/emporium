@@ -1,0 +1,35 @@
+/* @link https://utopia.fyi/grid/calculator?c=318,16,1.25,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+/****************************
+/* Spacer Tokens
+/****************************/
+
+/* Spacing */
+$space-3xs: clamp(0.25rem, 0.2284rem + 0.1085vw, 0.3125rem);
+$space-2xs: clamp(0.5rem, 0.4784rem + 0.1085vw, 0.5625rem);
+$space-xs: clamp(0.75rem, 0.7069rem + 0.2169vw, 0.875rem);
+$space-s: clamp(1rem, 0.9569rem + 0.2169vw, 1.125rem);
+$space-m: clamp(1.5rem, 1.4353rem + 0.3254vw, 1.6875rem);
+$space-l: clamp(2rem, 1.9138rem + 0.4338vw, 2.25rem);
+$space-xl: clamp(3rem, 2.8707rem + 0.6508vw, 3.375rem);
+$space-2xl: clamp(4rem, 3.8275rem + 0.8677vw, 4.5rem);
+$space-3xl: clamp(6rem, 5.7413rem + 1.3015vw, 6.75rem);
+
+/* One-up pairs */
+$space-3xs-2xs: clamp(0.25rem, 0.1422rem + 0.5423vw, 0.5625rem);
+$space-2xs-xs: clamp(0.5rem, 0.3707rem + 0.6508vw, 0.875rem);
+$space-xs-s: clamp(0.75rem, 0.6207rem + 0.6508vw, 1.125rem);
+$space-s-m: clamp(1rem, 0.7629rem + 1.1931vw, 1.6875rem);
+$space-m-l: clamp(1.5rem, 1.2413rem + 1.3015vw, 2.25rem);
+$space-l-xl: clamp(2rem, 1.5258rem + 2.3861vw, 3.375rem);
+$space-xl-2xl: clamp(3rem, 2.4826rem + 2.603vw, 4.5rem);
+$space-2xl-3xl: clamp(4rem, 3.0515rem + 4.7722vw, 6.75rem);
+
+/* Custom pairs */
+$space-s-l: clamp(1rem, 0.5689rem + 2.1692vw, 2.25rem);
+
+/* $grid-max-width: 69.75rem; */
+// $grid-max-width: 34.875rem;
+$grid-max-width: 52.3125rem;
+$grid-gutter: $space-s-l;
+$grid-columns: 12;

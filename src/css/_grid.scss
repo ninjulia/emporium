@@ -1,0 +1,47 @@
+/****************************
+/* Grid Layout
+/****************************/
+
+.u-container {
+	max-width: $grid-max-width;
+	padding-inline: $grid-gutter;
+	margin-inline: auto;
+}
+
+.u-grid {
+	display: grid;
+	gap: $grid-gutter;
+}
+
+body {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr, auto, 1fr;
+	grid-template-areas: 'header' 'main' 'footer';
+	justify-items: center;
+}
+
+header {
+	grid-area: header;
+	display: flex;
+	justify-content: center;
+}
+
+main {
+	grid-area: main;
+	margin: $space-xl $grid-gutter;
+}
+
+.link-container {
+	display: flex;
+	flex-direction: column;
+	gap: $space-xl;
+}
+
+footer {
+	grid-area: footer;
+	display: flex;
+	flex-direction: column;
+	gap: $space-s;
+	text-align: center;
+}

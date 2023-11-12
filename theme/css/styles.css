@@ -1,0 +1,83 @@
+/****************************
+/*components
+/****************************/
+
+.logo {
+	margin-inline: auto;
+	aspect-ratio: 1;
+	width: min(10rem, 15.625rem);
+	height: min(10rem, 15.625rem);
+	border-radius: 50%;
+
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	place-items: center;
+}
+
+.logo svg {
+	padding: var(--space-m);
+}
+
+.links {
+	text-decoration: none;
+	padding-inline: var(--space-s);
+	border-radius: var(--space-3xs);
+
+	display: grid;
+	place-items: center;
+	position: relative;
+	isolation: isolate;
+}
+
+.links h2 {
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+.links h2 img {
+	font-size: var(--step-2);
+	max-height: 6.25rem;
+	padding: var(--space-xs);
+}
+
+.links span {
+	z-index: 3;
+	padding: var(--space-2xs);
+	border-radius: var(--space-3xs);
+	font-weight: bold;
+
+	position: absolute;
+	top: calc(var(--space-xs) * -1);
+	left: calc(var(--space-xs) * -1);
+}
+
+.links:nth-of-type(odd) span {
+	transform: rotate(-1.5deg);
+}
+
+.links:nth-of-type(even) span {
+	transform: rotate(1.5deg);
+}
+
+.socials {
+	display: flex;
+	gap: var(--grid-gutter);
+	justify-content: center;
+}
+
+.icon-link {
+	text-decoration: none;
+	font-size: 0;
+	line-height: 0;
+	padding: var(--space-2xs);
+	border-radius: var(--space-3xs);
+}
+
+.icon-link .bi {
+	display: block;
+	font-size: var(--step-1);
+	width: var(--step-1);
+}
