@@ -1,6 +1,6 @@
 {
 	"name": "the_Julia_Set_Emporium",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A one-page link-in-bio website to direct users to various retailers",
 	"main": "index.html",
 	"scripts": {
@@ -14,13 +14,16 @@
 	"author": "ninjulia",
 	"dependencies": {
 		"@11ty/eleventy": "^2.0.1",
-		"@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.3"
+		"@11ty/eleventy-fetch": "^4.0.0",
+		"@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.3",
+		"dotenv": "^16.3.1"
 	},
 	"browserslist": [
 		"> 0.2%",
 		"not dead"
 	],
 	"devDependencies": {
-		"a11y-color-tokens": "^0.7.0"
+		"a11y-color-tokens": "^0.7.0",
+		"netlify-cli": "^17.3.1"
 	}
 }

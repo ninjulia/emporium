@@ -1,6 +1,24 @@
 # Code Repository for the Julia Set landing page
 
-Code repository for my 'link in bio' website, emporium.becausejulia.com. Project files are uploaded here for your code review and Netlify web hosting. I am working on leveraging 11ty for a static site generator and will eventually link the site to Notion for automated promotional updates.
+Code repository for my 'link in bio' website, emporium.becausejulia.com. Project files are uploaded here for your code review and Netlify web hosting. I am leveraging 11ty for a static site generator and a private Trello board pushes promotional updates. I decided to use Trello because of their email-to-board feature, generous automation options, and ease of Netlify deploy via Zapier. Rather than scheduling deploys every 12 hours via the code here, Zapier triggers a build based on changes to a list as they occur. While the Trello board that I am fetching here has its own documentation, I am filtering the response to reinforce the following criteria:
+
+- cards must contain a start date on or before today
+- cards must contain a due date on or after today
+- cards must contain a description
+- cards must have a label (with online store name)
+- fail state shows no offers and does not impede display of any other code
+
+## Development Scripts
+
+`npm start`
+
+Run 11ty with hot reload at localhost:8080, including reload based on Sass changes
+
+`npm run build`
+
+Production build includes minified, autoprefixed CSS
+
+Use this as the "Publish command" if needed by hosting such as Netlify.
 
 ## Table of contents
 
@@ -26,6 +44,7 @@ Code repository for my 'link in bio' website, emporium.becausejulia.com. Project
 
 - [11ty-sass-skeleton](https://github.com/5t3ph/11ty-sass-skeleton)
 - [a11y-color-tokens](https://github.com/5t3ph/a11y-color-tokens)
+- [Trello API](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/)
 
 ### Tech and Tooling
 
@@ -45,27 +64,23 @@ Code repository for my 'link in bio' website, emporium.becausejulia.com. Project
 
 ### Current Release
 
-- "Componentize" retailer links
-- Sort link appearance by discount offer
-- Add logic for empty discount state
-- Add year shortcode for copyright date
-- Update font stack
-- Clean up main folder
+- Set up fetch call to ~~Notion API~~ Trello API
+- Filter results for valid offer dates
+- Filter results for !labels
+- Filter results for !empty states
+- Leverage Netlify functions for initial request
 
 ### Future Improvements
 
-- Step Three
-
-  - Connect to Notion for CMS capabilities
-  - Set up auto-publishing
-
 - Step Four
-- Totally unnecessary redesign
-- Leverage parallax scrolling
+  - Refactor ./links/\*.njk to .json collection?
+  - Totally unnecessary redesign
+  - Incorporate tasteful parallax scrolling
 
-## Acknowledgments
+## Acknowledgments && Resources
 
 - Converted Adobe Illustrator color set to oklch via [oklch.com](https://oklch.com/)
 - Leveraged [typescale.com](https://typescale.com/) for scaling and google font paring
 - Leveraged [utopia.fyi](https://utopia.fyi/) for clamp() only sizing
 - Help with [dark mode favicon](https://web.dev/articles/building/an-adaptive-favicon/)
+- Help with [Trello as a CMS](https://css-tricks.com/using-trello-as-a-super-simple-cms/)
