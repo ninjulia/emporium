@@ -1,11 +1,23 @@
 ---
-layout: base.njk
+layout: "base.njk"
 ---
 
 <section class="link-container">
 
-    {% for links in collections.links | sort(false, false, 'templateContent') %}
-    {% include "./_includes/links.njk"%}
+    {% for links in combined %}
+
+    <a id="{{ links.name }}" class="links box-shadow" href="{{ links.linkurl }}" title="Shop on {{ links.name }}">
+        {% if links.offer %}
+        <span class="theme-{{ links.color }} box-shadow text-small"> {{ links.offer | safe }} </span>
+        {% endif %}
+        <h2>
+            <picture>
+                <source srcset="./assets/img/{{ links.name }}-logow.webp" media="(prefers-color-scheme:dark)">
+                <img src="./assets/img/{{ links.name }}-logo.webp" alt="shop on {{ links.name }}" width="256"
+                    height="200" />
+            </picture>
+        </h2>
+    </a>
     {% endfor %}
 
 </section>
