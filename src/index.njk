@@ -6,7 +6,8 @@ layout: "base.njk"
 
     {% for links in combined %}
 
-    <a id="{{ links.name }}" class="links box-shadow" href="{{ links.linkurl }}" title="Shop on {{ links.name }}">
+    <a id="{{ links.name }}" class="links box-shadow" href="{{ links.linkurl }}" title="Shop on {{ links.name }}"
+        rel="noopener noreferrer">
         {% if links.offer %}
         <span class="theme-{{ links.color }} box-shadow text-small"> {{ links.offer | safe }} </span>
         {% endif %}
@@ -20,4 +21,10 @@ layout: "base.njk"
     </a>
     {% endfor %}
 
+</section>
+<section>
+    <h2>About</h2>
+    <p>The Julia Set is a graphic designer using digital mediums to explore retro designs from 50s inspired
+        Kitsch to 80s heavy Synthwave, always focusing on colors and joy. Designs are available at the above
+        retailers on a variety of materials including tee shirts, stickers, home goods and more.</p>
 </section>
