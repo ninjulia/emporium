@@ -8,7 +8,7 @@ module.exports = [
 	},
 	{
 		name: 'Society6',
-		linkurl: 'https://society6.com/becausejulia/',
+		linkurl: 'https://society6.com/becausejulia',
 		color: 'lavender',
 	},
 	{
