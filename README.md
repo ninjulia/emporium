@@ -10,9 +10,9 @@ Code repository for my 'link in bio' website, emporium.becausejulia.com. Project
 
 ## Development Scripts
 
-`npm start`
+`npx netlify dev`
 
-Run 11ty with hot reload at localhost:8080, including reload based on Sass changes
+Run 11ty with Netlify secrets hot reload at localhost:8888, including reload based on Sass changes
 
 `npm run build`
 
@@ -45,11 +45,13 @@ Use this as the "Publish command" if needed by hosting such as Netlify.
 - [11ty-sass-skeleton](https://github.com/5t3ph/11ty-sass-skeleton)
 - [a11y-color-tokens](https://github.com/5t3ph/a11y-color-tokens)
 - [Trello API](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/)
+- [Netlify CLI](https://cli.netlify.com/)
 
 ### Tech and Tooling
 
 - 11ty
 - SASS
+- Netlify
 
 ### Links
 
@@ -68,12 +70,12 @@ Use this as the "Publish command" if needed by hosting such as Netlify.
 - Filter results for valid offer dates
 - Filter results for !labels
 - Filter results for !empty states
+- Refactor ./links/\*.njk to .js collection
 - Leverage Netlify functions for initial request
 
 ### Future Improvements
 
 - Step Four
-  - Refactor ./links/\*.njk to .json collection?
   - Totally unnecessary redesign
   - Incorporate tasteful parallax scrolling
 
@@ -84,3 +86,4 @@ Use this as the "Publish command" if needed by hosting such as Netlify.
 - Leveraged [utopia.fyi](https://utopia.fyi/) for clamp() only sizing
 - Help with [dark mode favicon](https://web.dev/articles/building/an-adaptive-favicon/)
 - Help with [Trello as a CMS](https://css-tricks.com/using-trello-as-a-super-simple-cms/)
+- Help with [merging object data](https://stackoverflow.com/questions/30025965/merge-duplicate-objects-in-array-of-objects)

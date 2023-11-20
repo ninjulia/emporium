@@ -1,16 +1,17 @@
 /****************************
 /*color themeing
 /****************************/
-
-/* HEX REFERENCE: https://oklch.com/
-flamingo ff3399
-lavender cc66ff
-lemon ffff33
-lime 7ad151
-magenta cc0066
-plum 330033
-purple 660066
-tangerine ff9933 */
+.hexcodes {
+	/* HEX REFERENCE: https://oklch.com/ */
+	--flamingo: #ff3399;
+	--lavender: #cc66ff;
+	--lemon: #ffff33;
+	--lime: #7ad151;
+	--magenta: #cc0066;
+	--plum: #330033;
+	--purple: #660066;
+	--tangerine: #ff9933;
+}
 
 :root {
 	/* color-scheme: light dark; */

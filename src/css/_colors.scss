@@ -214,6 +214,7 @@ p a:link {
 	border-color: var(--accent);
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
+	transition: color 200ms ease-in-out;
 }
 
 p a::after {

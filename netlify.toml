@@ -1,0 +1,14 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+
+    Content-Security-Policy: "default-src 'none'; base-uri 'none'; connect-src 'self'; font-src 'self'; img-src 'self'; manifest-src 'self'; object-src 'none'; script-src 'self'; style-src 'self';" 
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 404
+  force = true    

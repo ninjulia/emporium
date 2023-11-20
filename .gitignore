@@ -14,3 +14,7 @@ public
 
 # other
 README_start.md
+
+# Local Netlify folder
+.netlify
+
