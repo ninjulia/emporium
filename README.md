@@ -55,7 +55,7 @@ Use this as the "Publish command" if needed by hosting such as Netlify.
 
 ### Links
 
-- Live Site [emporium.becausejulia.com](https://zingy-basbousa-9f76c2.netlify.app/)
+- Live Site [emporium.becausejulia.com](https://emporium.becausejulia.com/)
 - Hosting via Netlify: [![Netlify Status](https://api.netlify.com/api/v1/badges/4429c8ed-bfa4-48b6-9504-5198908d0d04/deploy-status)](https://app.netlify.com/sites/zingy-basbousa-9f76c2/deploys)
 
 ## Project Roadmap
