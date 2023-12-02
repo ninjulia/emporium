@@ -31,7 +31,7 @@ Use this as the "Publish command" if needed by hosting such as Netlify.
   - [Current Screenshot](#screenshot)
   - [Current Release](#current-release)
   - [Future Improvements](#future-improvements)
-- [Acknowledgments](#)
+- [Acknowledgments](#acknowlegments)
 
 ## Project Dependencies
 
