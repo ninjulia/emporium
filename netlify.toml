@@ -10,4 +10,7 @@
 [[redirects]]
   from = "/*"
   to = "/404"
-  status = 404   
+  status = 404  
+
+[build]
+  ignore = "git log -1 --pretty=%B | grep dependabot"   
