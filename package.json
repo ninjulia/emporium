@@ -1,6 +1,6 @@
 {
 	"name": "the_Julia_Set_Emporium",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A one-page link-in-bio website to direct users to various retailers",
 	"main": "index.html",
 	"scripts": {

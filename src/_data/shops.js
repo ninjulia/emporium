@@ -7,11 +7,6 @@ module.exports = [
 		color: 'flamingo',
 	},
 	{
-		name: 'Society6',
-		linkurl: 'https://society6.com/becausejulia',
-		color: 'lavender',
-	},
-	{
 		name: 'TeePublic',
 		linkurl: 'https://www.teepublic.com/user/the-julia-set/',
 		color: 'tangerine',
