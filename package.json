@@ -24,6 +24,6 @@
 	],
 	"devDependencies": {
 		"a11y-color-tokens": "^0.7.0",
-		"netlify-cli": "^17.38.1"
+		"netlify-cli": "^20.1.1"
 	}
 }
