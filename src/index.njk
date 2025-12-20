@@ -13,8 +13,8 @@ layout: "base.njk"
         {% endif %}
         <h2>
             <picture>
-                <source srcset="./assets/img/{{ links.name }}-logow.webp" media="(prefers-color-scheme:dark)">
-                <img src="./assets/img/{{ links.name }}-logo.webp" alt="shop on {{ links.name }}" width="256"
+                <source srcset="./assets/img/{{ links.name | lower }}-logow.webp" media="(prefers-color-scheme:dark)">
+                <img src="./assets/img/{{ links.name | lower }}-logo.webp" alt="shop on {{ links.name }}" width="256"
                     height="200" />
             </picture>
         </h2>

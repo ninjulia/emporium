@@ -1,3 +1,6 @@
+@use "fonts";
+@use "spacing";
+
 /****************************
 /*components
 /****************************/
@@ -17,14 +20,14 @@
 }
 
 .logo svg {
-	padding: $space-m;
+	padding: spacing.$space-m;
 }
 
 /* Main */
 .links {
 	text-decoration: none;
-	padding-inline: $space-s;
-	border-radius: $space-3xs;
+	padding-inline: spacing.$space-s;
+	border-radius: spacing.$space-3xs;
 
 	display: grid;
 	place-items: center;
@@ -40,20 +43,20 @@
 }
 
 .links h2 img {
-	font-size: $step-2;
+	font-size: fonts.$step-2;
 	max-height: 6.25rem;
-	padding: 0 $space-xs;
+	padding: 0 spacing.$space-xs;
 }
 
 .links span {
 	z-index: 3;
-	padding: $space-2xs;
-	border-radius: $space-3xs;
+	padding: spacing.$space-2xs;
+	border-radius: spacing.$space-3xs;
 	font-weight: bold;
 
 	position: absolute;
-	top: calc($space-xs * -1);
-	left: calc($space-xs * -1);
+	top: calc(spacing.$space-xs * -1);
+	left: calc(spacing.$space-xs * -1);
 }
 
 .links:nth-of-type(odd) span {
@@ -67,7 +70,7 @@
 /* Footer */
 .socials {
 	display: flex;
-	gap: $grid-gutter;
+	gap: spacing.$grid-gutter;
 	justify-content: center;
 }
 
@@ -75,12 +78,12 @@
 	text-decoration: none;
 	font-size: 0;
 	line-height: 0;
-	padding: $space-2xs;
-	border-radius: $space-3xs;
+	padding: spacing.$space-2xs;
+	border-radius: spacing.$space-3xs;
 }
 
 .icon-link .bi {
 	display: block;
-	font-size: $step-1;
-	width: $step-1;
+	font-size: fonts.$step-1;
+	width: fonts.$step-1;
 }
