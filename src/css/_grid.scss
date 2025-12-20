@@ -1,16 +1,18 @@
+@use "spacing";
+
 /****************************
 /* Grid Layout
 /****************************/
 
 .u-container {
-	max-width: $grid-max-width;
-	padding-inline: $grid-gutter;
+	max-width: spacing.$grid-max-width;
+	padding-inline: spacing.$grid-gutter;
 	margin-inline: auto;
 }
 
 .u-grid {
 	display: grid;
-	gap: $grid-gutter;
+	gap: spacing.$grid-gutter;
 }
 
 body {
@@ -29,19 +31,19 @@ header {
 
 main {
 	grid-area: main;
-	margin: $space-xl $grid-gutter;
+	margin: spacing.$space-xl spacing.$grid-gutter;
 }
 
 .link-container {
 	display: flex;
 	flex-direction: column;
-	gap: $space-xl;
+	gap: spacing.$space-xl;
 }
 
 footer {
 	grid-area: footer;
 	display: flex;
 	flex-direction: column;
-	gap: $space-s;
+	gap: spacing.$space-s;
 	text-align: center;
 }

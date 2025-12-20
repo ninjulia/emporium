@@ -1,15 +1,18 @@
+@use "fonts";
+@use "spacing";
+
 /* @link https://typescale.com/ (font pairing, scale, line-height, font-weights) */
 
 body {
-	font-family: $font-family;
-	font-size: $step-0;
-	font-weight: $font-weight-base;
+	font-family: fonts.$font-family;
+	font-size: fonts.$step-0;
+	font-weight: fonts.$font-weight-base;
 	line-height: 1.75;
 	text-wrap: pretty;
 }
 
 p {
-	margin-bottom: $space-s;
+	margin-bottom: spacing.$space-s;
 }
 
 h1,
@@ -18,41 +21,41 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $headings-font-family;
-	font-weight: $headings-font-weight;
+	font-family: fonts.$headings-font-family;
+	font-weight: fonts.$headings-font-weight;
 	line-height: 1.3;
 	text-wrap: balance;
-	margin: $space-xl 0 $space-m;
+	margin: spacing.$space-xl 0 spacing.$space-m;
 }
 
 h1,
 h1 img {
-	font-size: $step-5;
+	font-size: fonts.$step-5;
 	text-align: center;
 }
 
 h2 {
-	font-size: $step-4;
+	font-size: fonts.$step-4;
 }
 
 h3 {
-	font-size: $step-3;
+	font-size: fonts.$step-3;
 }
 
 h4 {
-	font-size: $step-2;
+	font-size: fonts.$step-2;
 }
 
 h5 {
-	font-size: $step-1;
+	font-size: fonts.$step-1;
 }
 
 h6 {
-	font-size: $step-0;
+	font-size: fonts.$step-0;
 	font-weight: 900;
 }
 
 small,
 .text-small {
-	font-size: $step--1;
+	font-size: fonts.$step--1;
 }
