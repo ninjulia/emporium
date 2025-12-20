@@ -1,3 +1,6 @@
+[functions."update-copyright"]
+schedule = "@yearly"
+
 [[headers]]
   for = "/*"
   [headers.values]
